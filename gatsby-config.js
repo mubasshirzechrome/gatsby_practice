@@ -6,7 +6,9 @@ module.exports = {
     title: `blog baby`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-sitemap",
+  "gatsby-plugin-image",
+  "gatsby-plugin-sharp", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
