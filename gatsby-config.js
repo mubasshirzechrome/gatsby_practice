@@ -14,10 +14,10 @@ module.exports = {
       "icon": "src/images/icon.png"
     }
   }, "gatsby-plugin-mdx", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
+    resolve: "gatsby-source-filesystem",
     options: {
-      "name": "images",
-      "path": "./src/images/"
+      name: `blog`,
+      path: `${__dirname}/blog`,
     },
     __key: "images"
   }, {
@@ -27,5 +27,7 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },
+  "gatsby-plugin-mdx",
+]
 };
